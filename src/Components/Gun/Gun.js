@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Gun = (props) => {
-    console.log(props);
-    const { name, category, img, price, action, bullet } = props.gun;
+    const { gun, inCreaseCount } = props;
+    const { name, img, price, action, bullet } = gun;
 
     return (
         <div>
@@ -16,7 +16,7 @@ const Gun = (props) => {
                         <div className="badge badge-outline">{action}</div>
                         <div className="badge badge-outline">{bullet.slice(0, 5)}</div>
 
-                        <button className="mt-5 btn btn-sm btn-primary">Add To Cart</button>
+                        <button onClick={() => inCreaseCount()} className="mt-5 btn btn-sm btn-primary">Add To Cart</button>
                         <button className="mt-5 btn btn-sm btn-info">Details</button>
                     </div>
                 </div>
