@@ -50,4 +50,5 @@ const Header = () => {
     );
 };
 
+// This is the Header components.
 export default Header;
