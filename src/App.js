@@ -14,7 +14,6 @@ function App() {
     <div>
       <Header count={count}></Header>
       <Allgun inCreaseCount={inCreaseCount}></Allgun>
-
     </div>
   );
 }
